@@ -13080,6 +13080,7 @@ Source: &lt;a href="http://docs-emea.rs-online.com/webdocs/0f88/0900766b80f88670
 <part name="J1_CONN._ADAPTERB." library="Sensor_Board_DS2" deviceset="SAMACSYS_615006138421" device="&quot;" value="RJ12"/>
 <part name="J6_OAT" library="SamacSys_Parts" deviceset="SJ-2523-SMT-TR" device="" value="2.5mm JACK"/>
 <part name="ESP_AUD" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X2" device="" package3d_urn="urn:adsk.eagle:package:22435/2"/>
+<part name="C23" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="100nF"/>
 </parts>
 <sheets>
 <sheet>
@@ -13293,9 +13294,9 @@ Source: &lt;a href="http://docs-emea.rs-online.com/webdocs/0f88/0900766b80f88670
 <attribute name="NAME" x="214.63" y="-74.93" size="1.778" layer="95" align="center-left"/>
 <attribute name="VALUE" x="214.63" y="-77.47" size="1.778" layer="96" align="center-left"/>
 </instance>
-<instance part="R10" gate="G$1" x="162.56" y="73.66" smashed="yes">
-<attribute name="NAME" x="158.75" y="70.0786" size="1.778" layer="95"/>
-<attribute name="VALUE" x="158.75" y="67.818" size="1.778" layer="96"/>
+<instance part="R10" gate="G$1" x="167.64" y="73.66" smashed="yes">
+<attribute name="NAME" x="163.83" y="70.0786" size="1.778" layer="95"/>
+<attribute name="VALUE" x="163.83" y="67.818" size="1.778" layer="96"/>
 </instance>
 <instance part="12V_IN" gate="-1" x="5.08" y="-81.28" smashed="yes" rot="R180">
 <attribute name="NAME" x="2.54" y="-80.518" size="1.524" layer="95" rot="R180"/>
@@ -13452,6 +13453,10 @@ Source: &lt;a href="http://docs-emea.rs-online.com/webdocs/0f88/0900766b80f88670
 <instance part="ESP_AUD" gate="G$1" x="180.34" y="99.06" smashed="yes">
 <attribute name="NAME" x="173.99" y="104.775" size="1.778" layer="95"/>
 <attribute name="VALUE" x="173.99" y="93.98" size="1.778" layer="96"/>
+</instance>
+<instance part="C23" gate="G$1" x="157.48" y="66.04" smashed="yes">
+<attribute name="NAME" x="158.496" y="66.675" size="1.778" layer="95"/>
+<attribute name="VALUE" x="158.496" y="61.849" size="1.778" layer="96"/>
 </instance>
 </instances>
 <busses>
@@ -13792,6 +13797,11 @@ Source: &lt;a href="http://docs-emea.rs-online.com/webdocs/0f88/0900766b80f88670
 <wire x1="170.18" y1="99.06" x2="170.18" y2="91.44" width="0.1524" layer="91"/>
 <label x="170.18" y="91.44" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="C23" gate="G$1" pin="2"/>
+<wire x1="157.48" y1="60.96" x2="157.48" y2="55.88" width="0.1524" layer="91"/>
+<label x="157.48" y="55.88" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="VDD1" class="0">
 <segment>
@@ -13942,7 +13952,11 @@ Source: &lt;a href="http://docs-emea.rs-online.com/webdocs/0f88/0900766b80f88670
 <segment>
 <pinref part="R10" gate="G$1" pin="1"/>
 <pinref part="IC2_ESP32S2WROOMM22S2" gate="G$1" pin="EN"/>
+<wire x1="162.56" y1="73.66" x2="157.48" y2="73.66" width="0.1524" layer="91"/>
+<pinref part="C23" gate="G$1" pin="1"/>
 <wire x1="157.48" y1="73.66" x2="149.86" y2="73.66" width="0.1524" layer="91"/>
+<wire x1="157.48" y1="68.58" x2="157.48" y2="73.66" width="0.1524" layer="91"/>
+<junction x="157.48" y="73.66"/>
 </segment>
 </net>
 <net name="N$9" class="0">
@@ -14416,7 +14430,7 @@ Source: &lt;a href="http://docs-emea.rs-online.com/webdocs/0f88/0900766b80f88670
 </segment>
 <segment>
 <pinref part="R10" gate="G$1" pin="2"/>
-<wire x1="167.64" y1="73.66" x2="187.96" y2="73.66" width="0.1524" layer="91"/>
+<wire x1="172.72" y1="73.66" x2="187.96" y2="73.66" width="0.1524" layer="91"/>
 <label x="180.34" y="73.66" size="1.778" layer="95"/>
 </segment>
 <segment>
