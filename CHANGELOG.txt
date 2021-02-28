@@ -1,0 +1,9 @@
+v20
+Extended UART0 connector with EN, GPIO0 pins
+Moved ESP_AUD, WIFI_EN to different ESP32 pins
+
+v19
+Added bypass capacitor to ESP32 EN pin
+
+v18
+Initial upload
