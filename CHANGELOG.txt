@@ -1,4 +1,9 @@
 v20
+Added resistor divider to 12V input for battery voltage measurement on ESP32
+Extended UART0 connector with VCC pin for HC-05 compatibility
+Added capacitor to V_SNS pin
+
+v20
 Extended UART0 connector with EN, GPIO0 pins
 Moved ESP_AUD, WIFI_EN to different ESP32 pins
 
