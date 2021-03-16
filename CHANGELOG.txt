@@ -1,3 +1,13 @@
+v21
+Added resistor divider to 12V input for battery voltage measurement on ESP32
+Added bypass capacitor to V_SNS resistor
+Extended UART1 connector with VCC pin for HC-05 compatibility
+Modified audio amplifier input summing (resistor + cap on each input)
+Added ferrites to USB power and GND rails
+Added 1uF capacitor to VDD4F rail
+Solder pad tweaks to improve manufacturability
+Added Fiducials to improve manufacturability
+
 v20
 Extended UART0 connector with EN, GPIO0 pins
 Moved ESP_AUD, WIFI_EN to different ESP32 pins
