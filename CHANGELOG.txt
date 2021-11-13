@@ -1,3 +1,14 @@
+v22
+Switched to 4 layer layout
+Added SPI header
+Added optional I2C socket next to AMS-5915
+Added 1000pF capacitors to GND on interface pins to improve RF immunity
+I2C bus resistors changed to 6k8
+All 100nF caps are now 0402, all 1uF caps are 0603, all 10uF caps are 0805. 470pF caps are 0805. 220nF are 1206. 47pF cap is 0402.  All resistors are 0402.
+75k resistor was removed. AP65211AWU-7 should be replaced with AP62200TWU-7 or AP62300TWU-7.
+The LDL212PV33R is replaced by a LDL212PVR (these are identical except that the LDL212PVR requires a pair of resistors.  The LDL212PV33R can still be used if you leave one of the resistors open and short the other.
+Each NCV8163 is loaded with a Pi-filter (10uF cap, ferrite, 1uF cap).  Each MEMS sensor has a 100nF on VDD and a separate one on VDDIO.  There is a ferrite between each 100nF and the respective 1uF cap. 
+
 v21
 Added resistor divider to 12V input for battery voltage measurement on ESP32
 Added bypass capacitor to V_SNS resistor
