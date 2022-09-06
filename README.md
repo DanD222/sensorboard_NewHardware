@@ -8,6 +8,7 @@ https://github.com/Openvario/sensord/issues/26
 
 Features / comparison to the original OpenVario sensorboard:
 
+   - Added an ESP32 for polling the sensors and connectivity to the outside world
    - Updated sensors and voltage regulators
    - A USB connector has been added in place of the 6pin I2C connector
    - There are footprints for three differential sensors (DLHR-L30G-E1BD-C-NAV8, 4515DO-DS3BK030DPL, AMS5915)
